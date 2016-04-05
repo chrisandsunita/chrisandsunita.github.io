@@ -120,6 +120,7 @@ function sack(file) {
 	}
 
 	this.runAJAX = function(urlstring) {
+		alert("runAJAX");
 		if (this.failed) {
 			this.onFail();
 		} else {

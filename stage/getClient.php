@@ -31,5 +31,4 @@ if(isset($_GET['getClientId'])){
     echo "formObj.country.value = '';\n";      
   }    
 }
-echo "formObj.firstname.value='Sunita';\n";
 ?>
