@@ -51,7 +51,6 @@
 	var currentClientID=false;
 	function getClientData()
 	{
-		alert('getClientData');
 		var clientId = document.getElementById('clientID').value.replace(/[^0-9]/g,'');
 		if(clientId.length==4 && clientId!=currentClientID){
 			currentClientID = clientId
