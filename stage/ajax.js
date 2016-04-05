@@ -141,7 +141,6 @@ function sack(file) {
 				}
 
 				this.xmlhttp.onreadystatechange = function() {
-					alert("sc: eadystatechange");
 					switch (self.xmlhttp.readyState) {
 						case 1:
 							self.onLoading();
@@ -157,6 +156,8 @@ function sack(file) {
 							self.responseXML = self.xmlhttp.responseXML;
 							self.responseStatus[0] = self.xmlhttp.status;
 							self.responseStatus[1] = self.xmlhttp.statusText;
+
+							alert("hi: "+self.response);
 
 							if (self.execute) {
 								self.runResponse();
