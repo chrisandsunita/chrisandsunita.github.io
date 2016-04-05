@@ -1,6 +1,10 @@
 <?php
 /* Replace the data in these two lines with data for your db connection */
 
+echo "<script>
+alert('getClient.php');
+</script>";
+
 	$servername = "216.227.216.46";
 	$usernamero = "seaso19_rsvpro";
 	$passwordro = "y88Bn$";
