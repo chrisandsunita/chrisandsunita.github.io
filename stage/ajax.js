@@ -184,7 +184,7 @@ function sack(file) {
 							break;
 					}
 				};
-				alert("urlsend: "+this.URLString);
+				alert("!! urlsend: "+this.URLString);
 				this.xmlhttp.send(this.URLString);
 			}
 		}
