@@ -5,7 +5,6 @@
    see documentation or authors website for more details */
 
 function sack(file) {
-	alert("sack");
 	this.xmlhttp = null;
 
 	this.resetData = function() {
