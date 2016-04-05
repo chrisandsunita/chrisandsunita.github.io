@@ -133,7 +133,6 @@ function sack(file) {
 					totalurlstring = this.requestFile + this.queryStringSeparator + this.URLString;
 					this.xmlhttp.open(this.method, totalurlstring, true);
 				} else {
-					alert(this.method);
 					this.xmlhttp.open(this.method, this.requestFile, true);
 					try {
 						this.xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -142,6 +141,7 @@ function sack(file) {
 				}
 
 				this.xmlhttp.onreadystatechange = function() {
+					alert("readystatechange");
 					switch (self.xmlhttp.readyState) {
 						case 1:
 							self.onLoading();
