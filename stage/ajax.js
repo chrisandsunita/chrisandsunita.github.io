@@ -139,7 +139,7 @@ function sack(file) {
 						
 					} catch (e) { }
 				}
-
+//rararar
 				this.xmlhttp.onreadystatechange = function() {
 					alert("readystatechange");
 					switch (self.xmlhttp.readyState) {
