@@ -139,7 +139,9 @@ function sack(file) {
 					try {
 						this.xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 						alert("header");
-					} catch (e) { }
+					} catch (e) { 
+						alert("error");
+					}
 				}
 
 				this.xmlhttp.onreadystatechange = function() {
