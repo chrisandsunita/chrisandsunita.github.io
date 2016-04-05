@@ -127,12 +127,11 @@ function sack(file) {
 		} else {
 			this.createURLString(urlstring);
 			if (this.element) {
-				alert("this.element");
 				this.elementObj = document.getElementById(this.element);
 			}
 			if (this.xmlhttp) {
-				alert("this.xmlhttp");
 				var self = this;
+				alert("method: "+this.method+" requestFile: "+this.requestFile);
 				if (this.method == "GET") {
 					totalurlstring = this.requestFile + this.queryStringSeparator + this.URLString;
 					this.xmlhttp.open(this.method, totalurlstring, true);
