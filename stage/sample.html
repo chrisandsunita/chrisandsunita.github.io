@@ -55,9 +55,10 @@
 		if(clientId.length==4 && clientId!=currentClientID){
 			currentClientID = clientId
 			ajax.requestFile = 'getClient.php?getClientId='+clientId;	// Specifying which file to get
-			alert("requestFile: "+ajax.requestFile);
 			ajax.onCompletion = showClientData;	// Specify function that will be executed after file has been found
-			ajax.runAJAX();		// Execute AJAX function			
+			alert("runAJAX 1");			
+			ajax.runAJAX();		// Execute AJAX function	
+			alert("runAJAX 2");					
 		}
 		
 	}
