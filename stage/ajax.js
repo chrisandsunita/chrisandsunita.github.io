@@ -120,10 +120,12 @@ function sack(file) {
 	}
 
 	this.runAJAX = function(urlstring) {
-		alert("in runAJAX");
+		alert("start");
 		if (this.failed) {
+			alert("failed fast");
 			this.onFail();
 		} else {
+			alert("urlstring: "+urlstring);
 			this.createURLString(urlstring);
 			if (this.element) {
 				this.elementObj = document.getElementById(this.element);
