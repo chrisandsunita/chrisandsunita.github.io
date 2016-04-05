@@ -120,9 +120,7 @@ function sack(file) {
 	}
 
 	this.runAJAX = function(urlstring) {
-		alert("start");
 		if (this.failed) {
-			alert("failed fast");
 			this.onFail();
 		} else {
 			this.createURLString(urlstring);
@@ -131,14 +129,16 @@ function sack(file) {
 			}
 			if (this.xmlhttp) {
 				var self = this;
-				alert("method: "+this.method+" requestFile: "+this.requestFile);
 				if (this.method == "GET") {
 					totalurlstring = this.requestFile + this.queryStringSeparator + this.URLString;
 					this.xmlhttp.open(this.method, totalurlstring, true);
 				} else {
+					alert(this.method);
 					this.xmlhttp.open(this.method, this.requestFile, true);
+					alert("open");
 					try {
-						this.xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+						this.xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+						alert("header");
 					} catch (e) { }
 				}
 
