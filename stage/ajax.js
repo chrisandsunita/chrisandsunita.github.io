@@ -135,13 +135,10 @@ function sack(file) {
 				} else {
 					alert(this.method);
 					this.xmlhttp.open(this.method, this.requestFile, true);
-					alert("open");
 					try {
 						this.xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-						alert("header");
-					} catch (e) { 
-						alert("error");
-					}
+						
+					} catch (e) { }
 				}
 
 				this.xmlhttp.onreadystatechange = function() {
@@ -187,7 +184,7 @@ function sack(file) {
 							break;
 					}
 				};
-
+				alert("urlsend: "+this.URLString);
 				this.xmlhttp.send(this.URLString);
 			}
 		}
