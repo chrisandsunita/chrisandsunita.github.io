@@ -33,7 +33,7 @@ iframe {
   max-width: 100%;
 
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:480px) {
   .leftcolumn, .rightcolumn {
     float:none;
     width:auto;
@@ -55,7 +55,7 @@ iframe {
   padding-bottom: 6px;
   font-family: "Montserrat", sans-serif;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .main_h {
     padding-top: 25px;
   }
@@ -87,7 +87,7 @@ iframe {
   line-height: 1;
   margin-bottom: 10px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 6480px) {
   .logo {
     float: none;
   }
@@ -97,7 +97,7 @@ nav {
   float: right;
   width: 90%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   nav {
     width: 99%;
   }
@@ -108,7 +108,7 @@ nav ul {
   text-align: right;
   float: right;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   nav ul {
     padding-left: 0px;
     padding-top: 10px;
@@ -123,7 +123,7 @@ nav ul li {
   margin-left: 35px;
   line-height: 1.5;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   nav ul li {
     width: 99%;
     padding: 7px 0;
@@ -148,7 +148,7 @@ nav ul a {
   -moz-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .mobile-toggle {
     display: block;
   }
