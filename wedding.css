@@ -1,14 +1,8 @@
 iframe {
   border-width: 0;
-  overflow: hidden;
   margin: 0;
   padding: 0;
   max-width: 99%;
-}
-@media only screen and (max-width:480px) {
-  iframe {
-    overflow:scroll;
-  }
 }
 
 .map {
