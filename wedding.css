@@ -5,6 +5,11 @@ iframe {
   padding: 0;
   max-width: 99%;
 }
+@media only screen and (max-width:480px) {
+  iframe {
+    overflow:scroll;
+  }
+}
 
 .map {
   height: 420px;
